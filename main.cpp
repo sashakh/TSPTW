@@ -76,19 +76,19 @@ int main(int argc, char *argv[])
 	vsn->push_back("ins/n20w40");
 	vsn->push_back("ins/n20w60");
 	vsn->push_back("ins/n20w80");
-	vsn->push_back("ins/n20w100");
+	//vsn->push_back("ins/n20w100");
 	
 	vsn->push_back("ins/n40w20");
 	vsn->push_back("ins/n40w40");
 	vsn->push_back("ins/n40w60");
 	vsn->push_back("ins/n40w80");
-	vsn->push_back("ins/n40w100");
+	//vsn->push_back("ins/n40w100");
 	
 	vsn->push_back("ins/n60w20");
 	vsn->push_back("ins/n60w40");
 	vsn->push_back("ins/n60w60");
 	vsn->push_back("ins/n60w80");
-	vsn->push_back("ins/n60w100");
+	//vsn->push_back("ins/n60w100");
 	
 	vsn->push_back("ins/n80w20");
 	vsn->push_back("ins/n80w40");
