@@ -5,6 +5,7 @@ LIBS   := -lm
 
 CXXFLAGS:= -std=c++14
 CXXFLAGS:= -O3 -std=c++0x -Wno-unused-result -Wno-write-strings -Wno-deprecated
+CXXFLAGS:= -g -std=c++0x -Wno-unused-result -Wno-write-strings -Wno-deprecated
 
 cpp_srcs:= main.cpp \
 	gvns.cpp \
@@ -20,7 +21,8 @@ cpp_srcs:= main.cpp \
 	tsptwsolution.cpp \
 	vns.cpp
 
-#cpp_srcs += cputimer.cpp windowstimer.cpp
+cpp_srcs += cputimer.cpp
+#cpp_srcs += windowstimer.cpp
 
 cpp_objs:= $(cpp_srcs:.cpp=.o)
 

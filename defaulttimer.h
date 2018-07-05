@@ -1,20 +1,28 @@
 #ifndef DEFAULTTIMER_
 #define DEFAULTTIMER_
-//------------------------------------------------------------------------------
+
+#ifdef WIN32
 #include "windowstimer.h"
-//#include "cputimer.h"
-//------------------------------------------------------------------------------
 class DefaultTimer
-{		
+{
 	public:
 		
 		static Timer *getDefault()
 		{
 			return new WindowsTimer();
-			//return new CPUTimer();
 		}
 };
-//------------------------------------------------------------------------------  
+#else
+#include "cputimer.h"
+class DefaultTimer
+{
+	public:
+		static Timer *getDefault()
+		{
+			return new CPUTimer();
+		}
+};
+#endif // WIN32
 
 #endif
 
