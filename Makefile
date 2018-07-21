@@ -4,8 +4,8 @@ LIBS   := -lpthread
 LIBS   := -lm
 
 CXXFLAGS:= -std=c++14
-CXXFLAGS:= -O3 -std=c++0x -Wno-unused-result -Wno-write-strings -Wno-deprecated
-CXXFLAGS:= -g -std=c++0x -Wno-unused-result -Wno-write-strings -Wno-deprecated
+CXXFLAGS:= -O3 -std=c++0x -Wno-write-strings
+CXXFLAGS:= -g -std=c++0x -Wno-write-strings # comment out for performance
 
 cpp_srcs:= main.cpp \
 	gvns.cpp \
